@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 样式文件 -->
+    <link rel="stylesheet" href="./umeditor-1.2.3/themes/default/css/umeditor.css">
+    <!-- 引用jquery -->
+    <script src="./umeditor-1.2.3/third-party/jquery.min.js"></script>
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="./umeditor-1.2.3/umeditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="./umeditor-1.2.3/art_editor_api.js"></script>
+    <!-- 语言包文件 -->
+    <script type="text/javascript" src="./umeditor-1.2.3/lang/zh-cn/zh-cn.js"></script>
+    <!-- 实例化编辑器代码 -->
+    <script type="text/javascript">
+        $(function () {
+            window.um = UM.getEditor('container', {
+                /* 传入配置参数,可配参数列表看umeditor.config.js */
+                toolbar: [
+            'source | undo redo | bold italic underline strikethrough | superscript subscript | forecolor backcolor | removeformat |',
+            'insertorderedlist insertunorderedlist | selectall cleardoc paragraph | fontfamily fontsize' ,
+            '| justifyleft justifycenter justifyright justifyjustify |',
+            'link unlink | emotion image video  | map',
+            '| horizontal print preview fullscreen', 'drafts', 'formula'
+        ]
+        ,lang:"zh-cn"
+       
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <script id="container" name="content" type="text/plain" style="width:600px;height:200px;">
+        这里写你的初始化内容
+    </script>
+
+</body>
+
+</html>
